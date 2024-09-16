@@ -12,7 +12,7 @@ dotenv.config();
 class WeatherService {
   // TO-DO: Define the baseURL, API key, and city name properties
   private readonly baseURL: string = 'https://api.openweathermap.org';// /data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}';
-  private readonly API_KEY: string = '4cbf136da78c6ea7630047fd501e25d8';
+  private readonly API_KEY: string = process.env.API_KEY;
   // private cityName: string = '';
   // private forecast: Weather[] = [];
 
